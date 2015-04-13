@@ -1,4 +1,4 @@
-*AuKoNoMS* Stack is a boilerplate that provides a nice starting point for full stack JavaScript Web development with [Koa](http://koajs.com/), [Aurelia](http://aurelia.io/), and [Node.js](http://www.nodejs.org/) along with [MongoDB](https://www.mongodb.org/) and [WebSockets](https://developer.mozilla.org/en/docs/WebSockets). A summary of tech stack:
+*AuKoNoMS* Stack is a boilerplate that provides a nice starting point for full stack JavaScript Web development with [Koa server](http://koajs.com/), [Aurelia 0.11+](http://aurelia.io/), and [Node.js 1.0+](http://www.nodejs.org/) along with [Mongo DB 3.x](https://www.mongodb.org/) and [WebSockets](https://developer.mozilla.org/en/docs/WebSockets). A summary of tech stack:
 
 * **Client**: Aurelia and Twitter Bootstrap with pure html partials (no server side rendering so it's fully static and CDN ready). Bower packages are located at `client\bower_packages`.
 
