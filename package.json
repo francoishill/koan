@@ -4,7 +4,7 @@
   "description": "AuKoNoMS Stack (Aurelia, Koa, Node Mongo, Sockets) for real-time full-stack JavaScript web development.",
   "repository": {
     "type": "git",
-    "url": "git://github.com/soygul/koan.git"
+    "url": "git://github.com/kristianmandrup/aukonoms.git"
   },
   "engines": {
     "node": ">=1.0"
@@ -46,7 +46,7 @@
     "grunt-mocha-test": "~0",
     "grunt-nodemon": "~0",
     "grunt-protractor-runner": "~2",
-    
+
     "karma-coverage": "~0",
     "karma-jasmine": "~0",
     "karma-ng-html2js-preprocessor": "~0",

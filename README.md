@@ -17,15 +17,17 @@ TODO: Change to JSPM and Gulp!
 TODO
 
 ## TODO
-Change to Aurelia Stack defaults:
-- Gulp and JSPM
+
+Changes to Aurelia Stack defaults:
+- Gulp and JSPM, not Grunt
 - Aurelia bindings
-- Aurelia app.js
 - Stulys or SCSS for styles (css)
 - ES6 + ES7 syntax
 - Aurelia Views + ViewModels
-- Use Channels such as [CSP](https://github.com/ubolonton/js-csp)
+- Integrate Aurelia [skeleton-navigation](https://github.com/aurelia/skeleton-navigation)
 - Remove jQuery and Lodash!!
+- Merge package.json and pack.json files!
+- Use Channels such as [CSP](https://github.com/ubolonton/js-csp)
 
 Allow RethinkDB via Sockets using [aurelia-rethink-bindtable](https://github.com/kristianmandrup/aurelia-rethink-bindtable)
 
@@ -33,10 +35,13 @@ Allow RethinkDB via Sockets using [aurelia-rethink-bindtable](https://github.com
 Make sure that you have Node.js (v1.0 or above) and MongoDB v3.x (running on the default port 27017) installed on your computer. To get started with AuKoNoMS stack:
 
 ```bash
+npm install -g gulp jspm
+
 git clone ...
 cd koan
 npm install
-npm start
+jsmp install -y
+gulp watch
 ```
 
 Your application should run on the 3000 port so in your browser just go to [http://localhost:3000](http://localhost:3000). If you want to run tests, simply type:
