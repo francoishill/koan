@@ -1,23 +1,39 @@
-[![KOAN](https://raw.github.com/soygul/koan/master/client/images/koan.png)](https://koan.herokuapp.com)
+*AuKoNoMS* Stack is a boilerplate that provides a nice starting point for full stack JavaScript Web development with [Koa](http://koajs.com/), [Aurelia](http://aurelia.io/), and [Node.js](http://www.nodejs.org/) along with [MongoDB](https://www.mongodb.org/) and [WebSockets](https://developer.mozilla.org/en/docs/WebSockets). A summary of tech stack:
 
-[![Build Status](https://travis-ci.org/soygul/koan.svg?branch=master)](https://travis-ci.org/soygul/koan)
+* **Client**: Aurelia and Twitter Bootstrap with pure html partials (no server side rendering so it's fully static and CDN ready). Bower packages are located at `client\bower_packages`.
 
-KOAN Stack is a boilerplate that provides a nice starting point for full stack JavaScript Web development with [Koa](http://koajs.com/), [AngularJS](http://angularjs.org/), and [Node.js](http://www.nodejs.org/) along with [MongoDB](https://www.mongodb.org/) and [WebSockets](https://developer.mozilla.org/en/docs/WebSockets). A summary of tech stack:
-* **Client**: AngularJS and Twitter Bootstrap with pure html partials (no server side rendering so it's fully static and CDN ready). Bower packages are located at `client\bower_packages`.
-* **Server**: Koa for RESTful API on top of Node.js v0.11+ with the use of `--harmony` and generators.
+* **Server**: Koa for RESTful API on top of Node.js v1.0+
+
 * WebSockets along with JSON-RPC is used for real-time client-server communication and browser sync.
+
 * OAuth 2 is used for social authentications. Instead of auth cookies, we use JWT along with HTML5 *local storage*.
+
 * Grunt tasks are used to facilitate development and testing.
+TODO: Change to JSPM and Gulp!
+
 * MongoDB for persistence.
 
 ## Live Example
-Browse the live KOAN example on [https://koan.herokuapp.com](https://koan.herokuapp.com) which is a Facebook like real-time sharing app.
+TODO
+
+## TODO
+Change to Aurelia Stack defaults:
+- Gulp and JSPM
+- Aurelia bindings
+- Aurelia app.js
+- Stulys or SCSS for styles (css)
+- ES6 + ES7 syntax
+- Aurelia Views + ViewModels
+- Use Channels such as [CSP](https://github.com/ubolonton/js-csp)
+- Remove jQuery and Lodash!!
+
+Allow RethinkDB via Sockets using [aurelia-rethink-bindtable](https://github.com/kristianmandrup/aurelia-rethink-bindtable)
 
 ## Getting Started
-Make sure that you have Node.js (v0.11 or above) and MongoDB v2.x (running on the default port 27017) installed on your computer. To get started with KOAN stack, do following:
+Make sure that you have Node.js (v1.0 or above) and MongoDB v3.x (running on the default port 27017) installed on your computer. To get started with AuKoNoMS stack:
 
 ```bash
-git clone --depth 1 https://github.com/soygul/koan.git
+git clone ...
 cd koan
 npm install
 npm start
@@ -54,17 +70,16 @@ heroku config:add SECRET=jwt_secret PASS=login_pass FACEBOOK_SECRET=facebook_oau
 
 ## Testing
 You can run all the tests with `npm test`. Tests are run with:
-* Client (unit): Jasmine + Karma (Angular default)
-* Client (e2e): Jasmine + Protractor (Angular default)
+* Client (unit): Jasmine + Karma
+* Client (e2e): Jasmine + Protractor
 * Server: Mocha/SuperTest/Should (Koa default)
 
 Server tests utilize [co](https://github.com/tj/co) so you can use `*`/`yield` expressions while writing tests. See [/test/server/users.js](test/server/users.js) as an example.
 
 ## Credits
-Client side is entirely based on the official: [Angular Seed](https://github.com/angular/angular-seed). Server side simply utilizes generally accepted Koa middleware and Node.js best practices.
+Client side is entirely based on the official: [Aurelia Skeleton](https://github.com/aurelia/skeleton-app). 
 
-## The Name
-The project name is an acronym for Koa, Angular, and Node. It also is the name for a Zen Buddhist riddle used to focus the mind during meditation and to develop intuitive thinking.
+Server side simply utilizes generally accepted Koa middleware and Node.js best practices.
 
 ## License
 MIT

@@ -1,21 +1,20 @@
 {
-  "name": "koan",
+  "name": "aukonoms",
   "version": "1.0.0",
-  "description": "KOAN Stack (Koa, Angular, Node, Mongo, WebSockets) for real-time full-stack JavaScript web development.",
+  "description": "AuKoNoMS Stack (Aurelia, Koa, Node Mongo, Sockets) for real-time full-stack JavaScript web development.",
   "repository": {
     "type": "git",
     "url": "git://github.com/soygul/koan.git"
   },
   "engines": {
-    "node": ">=0.11.14"
+    "node": ">=1.0"
   },
   "author": {
-    "name": "Teoman Soygul",
-    "url": "http://www.soygul.com/"
+    "name": "Kristian Mandrup",
   },
   "scripts": {
     "start": "grunt",
-    "test": "node --debug --harmony node_modules/grunt-cli/bin/grunt test",
+    "test": "node --debug node_modules/grunt-cli/bin/grunt test",
     "postinstall": "bower install",
     "postupdate": "bower update"
   },
@@ -39,6 +38,7 @@
   "devDependencies": {
     "co-mocha": "~1",
     "co-supertest": "git://github.com/avbel/co-supertest.git",
+
     "grunt-concurrent": "~1",
     "grunt-contrib-watch": "~0",
     "grunt-env": "~0",
@@ -46,6 +46,7 @@
     "grunt-mocha-test": "~0",
     "grunt-nodemon": "~0",
     "grunt-protractor-runner": "~2",
+    
     "karma-coverage": "~0",
     "karma-jasmine": "~0",
     "karma-ng-html2js-preprocessor": "~0",
