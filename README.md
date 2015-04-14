@@ -31,10 +31,10 @@ Changes to Aurelia Stack defaults:
 - Stylus or SCSS for styles (css)
 - ES6 + ES7 syntax
 - Aurelia Views + ViewModels
-- Full Integration of Aurelia [skeleton-navigation](https://github.com/aurelia/skeleton-navigation) and [Contact app](https://github.com/aurelia/app-contacts)
+- Full integration of Aurelia [skeleton-navigation](https://github.com/aurelia/skeleton-navigation) and [Contact app](https://github.com/aurelia/app-contacts)
 - Use Channels such as [CSP](https://github.com/ubolonton/js-csp)
-
-Add [RethinkDB](rethinkdb.com) via Sockets using [aurelia-rethink-bindtable](https://github.com/kristianmandrup/aurelia-rethink-bindtable)
+- Use Socket.IO adapter form Mongo [socket.io-adapter-mongo](https://www.npmjs.com/package/socket.io-adapter-mongo) instead of current WebSockets
+- Add [RethinkDB](rethinkdb.com) via Socket.IO using [aurelia-rethink-bindtable](https://github.com/kristianmandrup/aurelia-rethink-bindtable)
 
 ## Getting Started
 Make sure that you have Node [IO.js](https://iojs.org) and [MongoDB 2 or 3.x](https://www.mongodb.org/) (running on the default port 27017) installed on your computer. 
