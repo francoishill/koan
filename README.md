@@ -27,14 +27,26 @@ TODO
 Work in Progress! Please help out completing this skeleton app ;)
 
 Changes to Aurelia Stack defaults:
-- Aurelia bindings
 - Stylus or SCSS for styles (css)
-- ES6 + ES7 syntax
-- Aurelia Views + ViewModels
-- Full integration of Aurelia [skeleton-navigation](https://github.com/aurelia/skeleton-navigation) and [Contact app](https://github.com/aurelia/app-contacts)
+- integration of [Contact app](https://github.com/aurelia/app-contacts)
 - Use Channels such as [CSP](https://github.com/ubolonton/js-csp)
 - Use Socket.IO adapter form Mongo [socket.io-adapter-mongo](https://www.npmjs.com/package/socket.io-adapter-mongo) instead of current WebSockets
 - Add [RethinkDB](rethinkdb.com) via Socket.IO using [aurelia-rethink-bindtable](https://github.com/kristianmandrup/aurelia-rethink-bindtable)
+- Port remaining skeleton-app files such as [build files](https://github.com/aurelia/skeleton-navigation/tree/master/build)
+
+### CSP
+
+[Communicating sequential processes](https://github.com/ubolonton/js-csp)
+
+A very close port of Clojurescript's [core.async](https://github.com/clojure/core.async). The most significant difference is that the IOC logic is encapsulated using generators (`yield`) instead of macros.
+
+### Mongo DB with Socket.io
+
+Use [socket.io-adapter-mongo](https://www.npmjs.com/package/socket.io-adapter-mongo)
+
+Requires [mubsub](https://github.com/scttnlsn/mubsub) client
+
+[Test example using mubsub](https://github.com/modit/socket.io-adapter-mongo/blob/master/test/index.js)
 
 ## Getting Started
 Make sure that you have Node [IO.js](https://iojs.org) and [MongoDB 2 or 3.x](https://www.mongodb.org/) (running on the default port 27017) installed on your computer. 
