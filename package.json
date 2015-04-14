@@ -4,7 +4,7 @@
   "description": "AuKoNoMS Stack (Aurelia, Koa, Node Mongo, Sockets) for real-time full-stack JavaScript web development.",
   "repository": {
     "type": "git",
-    "url": "git://github.com/kristianmandrup/aukonoms.git"
+    "url": "git://github.com/kristianmandrup/koan.git"
   },
   "engines": {
     "node": ">=1.0"
@@ -12,7 +12,10 @@
   "author": {
     "name": "Kristian Mandrup",
   },
-  "main": "dist/commonjs/index.js",  
+  "main": "app.js",  
+  "scripts": {
+    "start": "node app.js",
+  }, 
   "dependencies": {
     "co": "~4",
     "co-body": "~1",
@@ -32,8 +35,6 @@
     "co-mocha": "~1",
     "co-supertest": "git://github.com/avbel/co-supertest.git",
 
-    "aurelia-tools": "^0.1.3",
-    "browser-sync": "^1.8.1",
     "conventional-changelog": "0.0.11",
     "del": "^1.1.0",
     "gulp": "^3.8.10",
@@ -62,18 +63,5 @@
     "karma-phantomjs-launcher": "~0",
     "koa-livereload": "~0",
     "should": "~5"
-  },
-  "jspm": {
-    "dependencies": {
-      "aurelia-bootstrapper": "github:aurelia/bootstrapper@^0.11.0",
-      "aurelia-dependency-injection": "github:aurelia/dependency-injection@^0.6.0",
-      "aurelia-framework": "github:aurelia/framework@^0.10.0",
-      "aurelia-http-client": "github:aurelia/http-client@^0.7.0",
-      "aurelia-router": "github:aurelia/router@^0.7.0",
-      "bootstrap": "github:twbs/bootstrap@^3.3.4",
-      "css": "github:systemjs/plugin-css@^0.1.9",
-      "font-awesome": "npm:font-awesome@^4.3.0"
-    }
   }
-
 }

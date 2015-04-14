@@ -39,6 +39,19 @@ npm install -g gulp jspm
 
 git clone ...
 cd koan
+```
+
+Start Koa server
+
+```
+npm install
+node app.js
+```
+
+Install client modules and watch + live reload app changes
+
+```
+cd client
 npm install
 jsmp install -y
 gulp watch

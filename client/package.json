@@ -44,7 +44,7 @@
     "run-sequence": "^1.0.2",
     "vinyl-paths": "^1.0.0",
     "yargs": "^2.1.1"
-    },
+  },
   "jspm": {
     "dependencies": {
       "aurelia-bootstrapper": "github:aurelia/bootstrapper@^0.11.0",
