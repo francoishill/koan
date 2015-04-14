@@ -1,4 +1,13 @@
-*AuKoNoMS* Stack is a boilerplate that provides a nice starting point for full stack JavaScript Web development with [Koa server](http://koajs.com/), [Aurelia 0.11+](http://aurelia.io/), and [Node.js 1.0+](http://www.nodejs.org/) along with [Mongo DB 3.x](https://www.mongodb.org/) and [WebSockets](https://developer.mozilla.org/en/docs/WebSockets). A summary of tech stack:
+*NAuKo* Stack is a boilerplate that provides a nice starting point for full stack Web development with: 
+- [Node.js 1.0+](http://www.nodejs.org/)
+- [Koa server](http://koajs.com/)
+- [Aurelia 0.11+](http://aurelia.io/)
+- [Mongo DB 3.x](https://www.mongodb.org/) 
+- [WebSockets](https://developer.mozilla.org/en/docs/WebSockets). 
+
+It is based on the [koan](https://github.com/soygul/koan) stack.
+
+Summary of the stack:
 
 * **Client**: Aurelia and Twitter Bootstrap with pure html partials (no server side rendering so it's fully static and CDN ready). Bower packages are located at `client\bower_packages`.
 
@@ -8,37 +17,35 @@
 
 * OAuth 2 is used for social authentications. Instead of auth cookies, we use JWT along with HTML5 *local storage*.
 
-* Grunt tasks are used to facilitate development and testing.
-TODO: Change to JSPM and Gulp!
-
-* MongoDB for persistence.
+* MongoDB (and RethinkDB) for persistence.
 
 ## Live Example
 TODO
 
 ## TODO
 
+Work in Progress! Please help out completing this skeleton app ;)
+
 Changes to Aurelia Stack defaults:
-- Gulp and JSPM, not Grunt
 - Aurelia bindings
-- Stulys or SCSS for styles (css)
+- Stylus or SCSS for styles (css)
 - ES6 + ES7 syntax
 - Aurelia Views + ViewModels
-- Integrate Aurelia [skeleton-navigation](https://github.com/aurelia/skeleton-navigation)
-- Remove jQuery and Lodash!!
-- Merge package.json and pack.json files!
+- Full Integration of Aurelia [skeleton-navigation](https://github.com/aurelia/skeleton-navigation) and [Contact app](https://github.com/aurelia/app-contacts)
 - Use Channels such as [CSP](https://github.com/ubolonton/js-csp)
 
-Allow RethinkDB via Sockets using [aurelia-rethink-bindtable](https://github.com/kristianmandrup/aurelia-rethink-bindtable)
+Add [RethinkDB](rethinkdb.com) via Sockets using [aurelia-rethink-bindtable](https://github.com/kristianmandrup/aurelia-rethink-bindtable)
 
 ## Getting Started
-Make sure that you have Node.js (v1.0 or above) and MongoDB v3.x (running on the default port 27017) installed on your computer. To get started with AuKoNoMS stack:
+Make sure that you have Node [IO.js](https://iojs.org) and [MongoDB 2 or 3.x](https://www.mongodb.org/) (running on the default port 27017) installed on your computer. 
+
+To get started using NAuKo stack:
 
 ```bash
 npm install -g gulp jspm
 
-git clone ...
-cd koan
+git clone https://github.com/kristianmandrup/koan.git nauko
+cd nauko
 ```
 
 Start Koa server
