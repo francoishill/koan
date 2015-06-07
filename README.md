@@ -72,7 +72,7 @@ Install client modules and watch + live reload app changes
 ```
 cd client
 npm install
-jsmp install -y
+jspm install -y
 gulp watch
 ```
 
